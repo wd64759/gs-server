@@ -1,19 +1,18 @@
 package com.leafmind.poc.webcxt.controller;
 
 import com.leafmind.poc.webcxt.models.JiraTask;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.BeanUtils;
+import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Log4j2
 @RestController
 @RequestMapping("/vue")
 public class VueController {
 
+    private static final Logger log = org.apache.logging.log4j.LogManager.getLogger(VueController.class);
     List<JiraTask> fooTasks = new ArrayList<>();
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
