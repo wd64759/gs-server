@@ -21,6 +21,8 @@ gradlew*
 *.ipr
 /out/
 
+.vscode
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
